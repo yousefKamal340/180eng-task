@@ -64,9 +64,9 @@ The backend will run at: http://localhost:5000
 
 ### 3. 💻 Frontend Setup
 
-cd ../frontend
-npm install
-npm start
+- cd ../frontend
+- npm install
+- npm start
 
 The frontend will run at: http://localhost:3000
 
@@ -76,67 +76,57 @@ The frontend will run at: http://localhost:3000
 
 ### 🔍 Key Functionalities Explained
 🧑‍💼 Authentication
-User passwords are hashed using bcryptjs before storage.
+- User passwords are hashed using bcryptjs before storage.
 
-JWT tokens are generated on login and stored in localStorage.
+- JWT tokens are generated on login and stored in localStorage.
 
-The token is sent in the Authorization header for protected API requests.
+- The token is sent in the Authorization header for protected API requests.
 
 ### 📋 Todo Management
-Todos contain title, description, dueDate, and status.
+- Todos contain title, description, dueDate, and status.
 
 Users can:
 
-Create new todos
+- Create new todos
 
-Toggle status between pending and completed
+- Toggle status between pending and completed
 
-Delete a todo
+- Delete a todo
 
-Search by title
+- Search by title
 
-Filter by status
+- Filter by status
 
 ### 🎨 Material UI Styling
-Responsive layout using Grid, Card, and Stack
+- Responsive layout using Grid, Card, and Stack
 
-Consistent look and feel across devices
+- Consistent look and feel across devices
 
-Styled buttons, form inputs, and toolbars
-
----
-
-🧪 Example .env
-
-# backend/.env
-
-MONGO_URI=mongodb://localhost:27017/tododb
-JWT_SECRET=myverysecretjwt
-PORT=5000
+- Styled buttons, form inputs, and toolbars
 
 ---
 
 ### 🔮 Future Enhancements
-✅ Toast notifications for actions using react-toastify
+- ✅ Toast notifications for actions using react-toastify
 
-✏️ Edit todos inline or in a modal
+- ✏️ Edit todos inline or in a modal
 
-🌙 Dark mode toggle
+- 🌙 Dark mode toggle
 
 ### 🌍 Deployment:
 
-Frontend: Vercel / Netlify
+- Frontend: Vercel / Netlify
 
-Backend: Render / Railway / Heroku
+- Backend: Render / Railway / Heroku
 
-📱 PWA support for offline access
+- 📱 PWA support for offline access
 
 ---
 
 ### 🙌 Acknowledgments
 
-Material UI (https://mui.com/)
+- Material UI (https://mui.com/)
 
-MongoDB (https://www.mongodb.com/)
+- MongoDB (https://www.mongodb.com/)
 
-JWT.io (https://jwt.io/)
+- JWT.io (https://jwt.io/)

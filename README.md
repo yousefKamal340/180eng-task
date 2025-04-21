@@ -42,27 +42,27 @@ This app allows users to **register**, **login**, and manage personal to-do task
 
 ### 1. 📁 Clone the Repository
 
-git clone https://github.com/yourusername/mern-todo-app.git
+git clone https://github.com/yousefKamal340/180eng-task.git
 cd mern-todo-app
 
-2. ⚙️ Backend Setup
+### 2. ⚙️ Backend Setup
 
-cd backend
-npm install
+- cd backend
+- npm install
 
-Create a .env file inside the backend directory with the following:
+- Create a .env file inside the backend directory with the following:
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-PORT=5000
+- - MONGO_URI=your_mongodb_connection_string
+- - JWT_SECRET=your_jwt_secret_key
+- - PORT=5000
 
-Start the backend server:
-npm start
+- Start the backend server:
+- - npm start
 The backend will run at: http://localhost:5000
 
 ---
 
-3. 💻 Frontend Setup
+### 3. 💻 Frontend Setup
 
 cd ../frontend
 npm install
@@ -74,7 +74,7 @@ The frontend will run at: http://localhost:3000
 
 ---
 
-🔍 Key Functionalities Explained
+### 🔍 Key Functionalities Explained
 🧑‍💼 Authentication
 User passwords are hashed using bcryptjs before storage.
 
@@ -82,7 +82,7 @@ JWT tokens are generated on login and stored in localStorage.
 
 The token is sent in the Authorization header for protected API requests.
 
-📋 Todo Management
+### 📋 Todo Management
 Todos contain title, description, dueDate, and status.
 
 Users can:
@@ -97,7 +97,7 @@ Search by title
 
 Filter by status
 
-🎨 Material UI Styling
+### 🎨 Material UI Styling
 Responsive layout using Grid, Card, and Stack
 
 Consistent look and feel across devices
@@ -116,14 +116,14 @@ PORT=5000
 
 ---
 
-🔮 Future Enhancements
+### 🔮 Future Enhancements
 ✅ Toast notifications for actions using react-toastify
 
 ✏️ Edit todos inline or in a modal
 
 🌙 Dark mode toggle
 
-🌍 Deployment:
+### 🌍 Deployment:
 
 Frontend: Vercel / Netlify
 
@@ -133,7 +133,7 @@ Backend: Render / Railway / Heroku
 
 ---
 
-🙌 Acknowledgments
+### 🙌 Acknowledgments
 
 Material UI (https://mui.com/)
 

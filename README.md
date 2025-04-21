@@ -45,21 +45,8 @@ npm install
 npm start
 Your app will be running at http://localhost:3000
 
-🧠 Project Structure
-mern-todo-app/
-├── backend/
-│ ├── models/ # Mongoose models
-│ ├── routes/ # User & Todo routes
-│ ├── server.js # App entry point
-├── frontend/
-│ ├── src/
-│ │ ├── components/ # Login, Register, Dashboard
-│ │ └── App.js # Main routing
-├── .env
 🔍 Code Highlights
 Authentication: JWT-based, stored in localStorage, sent via headers
-
-Todo Features:
 
 CRUD operations via protected endpoints
 

@@ -134,8 +134,9 @@ Backend: Render / Railway / Heroku
 ---
 
 🙌 Acknowledgments
-Material UI
 
-MongoDB
+Material UI (https://mui.com/)
 
-JWT.io
+MongoDB (https://www.mongodb.com/)
+
+JWT.io (https://jwt.io/)

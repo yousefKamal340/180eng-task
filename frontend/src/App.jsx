@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import TodoDashboard from "./components/TodoDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -16,6 +17,14 @@ function App() {
             <PublicRoute>
               <Register />
             </PublicRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
           }
         />
         <Route

@@ -18,9 +18,11 @@ import {
   Toolbar,
   IconButton,
   Paper,
+  Tooltip,
 } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useNavigate } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function TodoDashboard() {
   const [todos, setTodos] = useState([]);
@@ -86,14 +88,29 @@ function TodoDashboard() {
 
   return (
     <>
-      <AppBar position="sticky">
+      <AppBar position="static" sx={{ marginBottom: 4 }}>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Todo Dashboard
+            To-Do Dashboard
           </Typography>
-          <IconButton color="inherit" onClick={handleLogout}>
-            <LogoutIcon />
-          </IconButton>
+          <Box>
+            <Tooltip title="Profile">
+              <IconButton
+                color="inherit"
+                onClick={() => {
+                  console.log("Navigating to /profile");
+                  navigate("/profile");
+                }}
+              >
+                <AccountCircleIcon />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Logout">
+              <IconButton color="inherit" onClick={handleLogout}>
+                <LogoutIcon />
+              </IconButton>
+            </Tooltip>
+          </Box>
         </Toolbar>
       </AppBar>
 
@@ -104,7 +121,7 @@ function TodoDashboard() {
           </Typography>
 
           <Grid container spacing={2} marginBottom={3}>
-            <Grid item xs={12} sm={6} >
+            <Grid item xs={12} sm={6}>
               <TextField
                 fullWidth
                 label="Search by title"
